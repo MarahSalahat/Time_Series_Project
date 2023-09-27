@@ -86,10 +86,13 @@ def predict():
             predictions[i]=round(prediction[0], 2) 
 
         
-        
+        last_10_records_tmin = df_min["Present_Tmin"].tail(10).tolist()
+        last_10_records_tmax = df_max["Present_Tmax"].tail(10).tolist()
 
         response = {
-            "predict": predictions
+            "predict": predictions,
+            "last_10_records_tmin": last_10_records_tmin,
+            "last_10_records_tmax": last_10_records_tmax
         }
 
         return jsonify(response)
