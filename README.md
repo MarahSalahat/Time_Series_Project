@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code and resources for a weather forecasting project, part of the GSG Data Science training program. 
+This repository contains the code and resources for a weather forecasting project, part of the Gaza Sky Geeks Data Science training program. 
 The project predicts Tmin and Tmax temperatures for the next 5 days at 5 different weather stations in Korea using time series models.
 It also includes user authentication via Flask and model deployment in a Flutter mobile app.
 
